@@ -26,7 +26,7 @@ My focus is on building AI applications that go beyond `prompt → response` by 
 
 # 🚀 Featured Projects
 
-## 1. AI Code Modernization Platform
+## 1. LegacyLens — Agentic Software Modernization
 
 ### Multi-Agent AI Platform for Legacy Application Modernization
 
@@ -37,7 +37,6 @@ Rather than sending an entire repository directly to an LLM, the system combines
 ### Key capabilities
 
 * Multi-language repository analysis
-* AST / Tree-sitter analysis
 * Universal CTags symbol extraction
 * Dependency and technology detection
 * Complexity and structural signals
@@ -79,7 +78,7 @@ Migration Report
 
 ---
 
-## 2. AI Automation Command Center
+## 2. FlowPilot — Agentic Automation Platform
 
 ### Production-Minded AI Automation Control Plane
 
@@ -135,7 +134,7 @@ Observability
 
 ---
 
-## 3. Evidence-Grounded Agentic RAG Platform
+## 3. EvidenceFlow — Verified RAG & Research
 
 ### Fail-Closed Retrieval-Augmented Generation System
 
@@ -199,7 +198,7 @@ LangGraph Router
 
 ---
 
-## 4. Quotation Intelligence Platform
+## 4. QuoteSense — Procurement Intelligence
 
 ### AI-Powered Procurement & Document Intelligence
 
@@ -266,7 +265,7 @@ Human → Make the Final Decision
 
 ---
 
-## 5. Web Crawler Agent
+## 5. WebQA Intelligence — AI-Assisted Testing
 
 ### AI-Powered Web Application QA Intelligence Platform
 
@@ -420,21 +419,6 @@ Across my projects, I focus on:
 
 ---
 
-# 💼 Professional Experience
-
-### Software Engineer (AI/ML) — Bebo Technologies
-
-Working on enterprise AI systems involving:
-
-* Agentic RAG
-* LLM-powered automation
-* Multi-agent engineering workflows
-* AI-assisted application modernization
-* Retrieval and knowledge systems
-* AI-assisted software engineering workflows
-
----
-
 # 📈 Currently
 
 Building and deploying practical AI systems with a focus on:
@@ -452,9 +436,6 @@ Building and deploying practical AI systems with a focus on:
 See the pinned repositories above for deployed applications and technical documentation.
 
 **Portfolio:**  
-Coming soon
-
-**Resume:**
 Coming soon
 
 ---
