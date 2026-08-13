@@ -448,7 +448,10 @@ Building and deploying practical AI systems with a focus on:
 **LinkedIn:**
 [Connect with me](https://www.linkedin.com/in/sk-asaif-ali-134873243/)
 
-**Portfolio:**
+**Live Projects:**  
+See the pinned repositories above for deployed applications and technical documentation.
+
+**Portfolio:**  
 Coming soon
 
 **Resume:**
