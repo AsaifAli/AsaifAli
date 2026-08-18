@@ -19,8 +19,6 @@ Multi-language legacy-code modernization platform combining program analysis, de
 - Post-migration quality gates and risk reporting
 - FastAPI + Streamlit + Docker + Render Blueprint
 
-**Live demo:** https://ai-code-modernization-ui.onrender.com
-
 **Repository:** https://github.com/AsaifAli/AI-Code-Modernization-Platform
 
 ### 2. FlowPilot — Agentic Automation Platform
@@ -35,8 +33,6 @@ Production-minded AI automation control plane built around asynchronous workflow
 - Prometheus, Grafana, OpenTelemetry, and Jaeger
 - Render Blueprint deployment
 
-**Live demo:** https://ai-automation-ui-ac2c.onrender.com
-
 **Repository:** https://github.com/AsaifAli/AI-Automation-Command-Center
 
 ### 3. EvidenceFlow — Verified RAG & Research
@@ -49,8 +45,6 @@ LangGraph research and document intelligence system designed around a fail-close
 - Persistent conversation state
 - Evidence registry and citation verification
 - Numeric/date evidence checks and evidence-conflict detection
-
-**Live demo:** https://langgraph-rag-hdkn.onrender.com
 
 **Repository:** https://github.com/AsaifAli/LangGraph-RAG
 
@@ -65,8 +59,6 @@ AI-powered quotation analysis system that combines LLM extraction with determini
 - Evidence traceability
 - FastAPI + Streamlit + Docker
 
-**Live demo:** https://quotation-analyzer-9m4i.onrender.com
-
 **Repository:** https://github.com/AsaifAli/quotation-analyzer
 
 ### 5. WebQA Intelligence — AI-Assisted Testing
@@ -79,8 +71,6 @@ Playwright-based web application QA intelligence platform for dynamic-site crawl
 - Evidence-grounded QA generation
 - Browser health and regression signals
 - Safe-by-default interaction model
-
-**Live demo:** https://web-crawler-agent.onrender.com
 
 **Repository:** https://github.com/AsaifAli/web-crawler-agent
 
