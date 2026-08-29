@@ -35,16 +35,20 @@ Production-minded AI automation control plane built around asynchronous workflow
 
 **Repository:** https://github.com/AsaifAli/AI-Automation-Command-Center
 
-### 3. EvidenceFlow — Verified RAG & Research
+### 3. EvidenceFlow — Verified Sparse-First RAG & Research
 
-LangGraph research and document intelligence system designed around a fail-closed evidence model.
+LangGraph research and document intelligence system built around sparse-first retrieval, adaptive query recovery, evidence provenance, citation verification, and fail-closed behavior.
 
-- Agentic routing across knowledge base, web research, both, or direct response
-- Qdrant hybrid dense/sparse retrieval
-- RRF fusion and hosted Jina reranking
-- Persistent conversation state
-- Evidence registry and citation verification
-- Numeric/date evidence checks and evidence-conflict detection
+- OpenSearch BM25, exact, phrase, fuzzy, and metadata-aware retrieval
+- Optional neural-sparse retrieval without dense-vector k-NN
+- Reciprocal Rank Fusion (RRF) across retrieval candidates
+- Cross-encoder reranking with Jina AI
+- Bounded agentic query expansion for weak first-pass retrieval
+- Persistent multi-turn conversation state with LangGraph checkpointing
+- Evidence registry with stable turn-scoped evidence IDs
+- Citation verification, numeric/date support checks, and evidence-conflict detection
+- Safe handling of retrieved documents and web content as untrusted data
+- Fail-closed behavior when evidence is missing or cannot be verified
 
 **Repository:** https://github.com/AsaifAli/LangGraph-RAG
 
@@ -122,6 +126,7 @@ Across projects I emphasize:
 
 - Structured LLM outputs and schema validation
 - Evidence-grounded generation and citation verification
+- Retrieval designed for recall, precision, and transparent failure modes
 - Deterministic business rules and quality gates
 - Human-in-the-loop controls for external-impact actions
 - Automated evaluation and regression testing
