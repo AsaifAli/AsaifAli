@@ -37,20 +37,25 @@ Production-minded AI automation control plane built around asynchronous workflow
 
 ### 3. EvidenceFlow — Verified Sparse-First RAG & Research
 
-LangGraph research and document intelligence system built around sparse-first retrieval, adaptive query recovery, evidence provenance, citation verification, and fail-closed behavior.
+LangGraph research and document intelligence system built around **sparse-first, vector-optional retrieval**, adaptive query recovery, evidence provenance, citation verification, and fail-closed behavior.
 
-- OpenSearch BM25, exact, phrase, fuzzy, and metadata-aware retrieval
-- Optional neural-sparse retrieval without dense-vector k-NN
-- Reciprocal Rank Fusion (RRF) across retrieval candidates
-- Cross-encoder reranking with Jina AI
-- Bounded agentic query expansion for weak first-pass retrieval
-- Persistent multi-turn conversation state with LangGraph checkpointing
-- Evidence registry with stable turn-scoped evidence IDs
-- Citation verification, numeric/date support checks, and evidence-conflict detection
-- Safe handling of retrieved documents and web content as untrusted data
-- Fail-closed behavior when evidence is missing or cannot be verified
+* **OpenSearch inverted-index retrieval** using BM25 for lexical relevance
+* Exact, phrase, fuzzy, and metadata-aware sparse retrieval
+* **Neural-sparse retrieval without dense-vector k-NN**, when enabled
+* Dense-vector retrieval is not a hard dependency for the retrieval pipeline
+* **Reciprocal Rank Fusion (RRF)** across independently ranked retrieval candidates
+* **Cross-encoder reranking with Jina AI**
+* Bounded agentic query expansion for weak first-pass retrieval
+* Persistent multi-turn conversation state with LangGraph checkpointing
+* Evidence registry with stable turn-scoped evidence IDs
+* Whole-document evidence handling for stronger contextual synthesis
+* Citation verification and claim grounding against the actual evidence set
+* Numeric/date support checks and evidence-conflict detection
+* Retrieved documents and web results treated as **untrusted data**, isolated from agent control flow
+* **Fail-closed behavior** when evidence is missing, insufficient, unsafe, or cannot be verified
 
 **Repository:** https://github.com/AsaifAli/LangGraph-RAG
+
 
 ### 4. QuoteSense — Procurement Intelligence
 
