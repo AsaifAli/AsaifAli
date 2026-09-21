@@ -83,6 +83,61 @@ Playwright-based web application QA intelligence platform for dynamic-site crawl
 
 **Repository:** https://github.com/AsaifAli/web-crawler-agent
 
+## 🚀 AI Engineering Evaluation & Agent Harness
+
+A modular AI engineering platform for **evaluating, observing, testing, and governing AI systems** across RAG, agentic workflows, code modernization, document intelligence, and AI-assisted testing.
+
+It currently integrates evaluation workflows for **five AI systems**:
+
+- **FlowPilot** — Agentic automation control plane
+- **LegacyLens** — Agentic software modernization
+- **EvidenceFlow** — Verified sparse-first RAG
+- **QuoteSense** — Procurement and document intelligence
+- **WebQA Intelligence** — AI-assisted browser testing
+
+### What the platform provides
+
+| Capability | What it covers |
+|---|---|
+| **AI Evaluation** | Project-specific evaluation packs and golden datasets |
+| **RAG Evaluation** | Recall@K, Precision@K, MRR, MAP@K, nDCG@K |
+| **Agent Evaluation** | Task success, step success, tool-call validity, policy and approval compliance |
+| **Code Evaluation** | Syntax validation, unit-test pass rate, semantic verification, release gates |
+| **Document Evaluation** | Exact match, schema validity, numeric accuracy, risk F1 |
+| **Browser QA Evaluation** | Test-generation P/R/F1, defect and regression detection, locator validity |
+| **LLM-as-a-Judge** | Relevance, groundedness, faithfulness, completeness and qualitative scoring |
+| **Observability** | Latency, tokens, cost, fallback and execution telemetry |
+| **Agent Tracing** | Step-level execution traces and tool-call visibility |
+| **Guardrails** | Prompt-injection detection, secret redaction and policy enforcement |
+| **Experiment Tracking** | Baseline vs candidate comparison and regression detection |
+| **Prompt / Model Lineage** | Versioned prompt, model, dataset and configuration tracking |
+| **Quality Gates** | Automated thresholds for AI quality and regression control |
+| **Human-in-the-Loop** | Approval workflows and auditable decisions |
+| **n8n Automation** | Scheduled evaluation and regression workflows |
+| **Plugin Architecture** | Reusable adapters and evaluation packs for new AI services |
+
+### 🔌 Modular Integration
+
+The harness is designed as an extensible platform rather than a project-specific dashboard.
+
+New AI services can be integrated through:
+
+```text
+AI Service
+    ↓
+Project Adapter
+    ↓
+Normalized AgentRun
+    ↓
+Evaluation Pack
+    ↓
+Metrics + Quality Gates
+    ↓
+Observability / Audit
+    ↓
+Dashboard
+```
+
 ## Shared Portfolio LLM Gateway
 
 The five interactive projects use a shared OpenAI-compatible gateway for BYOK sessions.
