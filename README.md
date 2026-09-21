@@ -138,6 +138,8 @@ Observability / Audit
 Dashboard
 ```
 
+**Repository:** [github.com/AsaifAli/ai-engineering-evaluation-harness](https://github.com/AsaifAli/ai-engineering-evaluation-harness)
+
 ## Shared Portfolio LLM Gateway
 
 The five interactive projects use a shared OpenAI-compatible gateway for BYOK sessions.
