@@ -1,208 +1,112 @@
 # Asaif Ali
 
-### AI/ML Engineer | Generative AI | Agentic AI | RAG | LLM Systems
+### AI Engineer | Generative AI | Agentic Systems | RAG | AI Engineering
 
-I build **production-oriented AI systems** that combine LLMs, agentic workflows, retrieval, deterministic controls, evaluation, observability, and cloud deployment.
+I design and build AI applications that move beyond simple prompt-and-response experiences: systems with retrieval, orchestration, structured outputs, deterministic validation, human approval boundaries, and practical deployment paths.
 
-My engineering focus is moving beyond `prompt → response` toward systems that are **reliable, testable, evidence-grounded, observable, and deployable**.
+My focus is on making AI useful in real workflows while keeping its behavior inspectable, testable, and appropriately governed.
 
-## Featured projects
+## Featured AI applications
 
-### 1. LegacyLens — Agentic Software Modernization
+### 1. EvidenceFlow — Verified Research & Document Intelligence
 
-Multi-language legacy-code modernization platform combining program analysis, dependency intelligence, retrieval, migration planning, agentic transformation, and post-migration QA.
+A LangGraph-based research and RAG application built around sparse-first retrieval, evidence provenance, citation verification, and fail-closed answers.
 
-- AST / CTags analysis and dependency intelligence
-- Qdrant-backed knowledge storage and retrieval
-- Migration planning and context-grounded conversion
-- Language-agnostic execution and validation adapters
-- Post-migration quality gates and risk reporting
-- FastAPI + Streamlit + Docker + Render Blueprint
+- OpenSearch lexical retrieval with BM25; optional neural-sparse retrieval
+- Reciprocal Rank Fusion and cross-encoder reranking
+- Bounded query expansion when initial evidence is weak
+- Document ingestion, persistent conversations, and source traceability
+- Citation and grounding checks, conflict detection, and evidence-sufficiency states
 
-**Repository:** https://github.com/AsaifAli/AI-Code-Modernization-Platform
+**Repository:** [LangGraph-RAG](https://github.com/AsaifAli/LangGraph-RAG)
 
-### 2. FlowPilot — Agentic Automation Platform
+### 2. QuoteSense — Procurement Intelligence
 
-Production-minded AI automation control plane built around asynchronous workflows, approval boundaries, evidence, persistence, scheduling, and observability.
+An AI-assisted quotation analysis application that turns supplier documents into structured, comparable, explainable procurement decisions.
 
-- LangGraph orchestration
-- FastAPI control plane
-- Redis/RQ async execution
-- PostgreSQL run and audit persistence
-- Human-in-the-loop approval
-- Prometheus, Grafana, OpenTelemetry, and Jaeger
-- Render Blueprint deployment
+- PDF, DOCX, TXT, and XLSX ingestion
+- LLM-assisted extraction with schema validation
+- Deterministic multi-criteria scoring and supplier comparison
+- Completeness checks, commercial risk detection, and price anomaly signals
+- Evidence traceability and human-reviewed recommendations
 
-**Repository:** https://github.com/AsaifAli/AI-Automation-Command-Center
+**Repository:** [quotation-analyzer](https://github.com/AsaifAli/quotation-analyzer)
 
-### 3. EvidenceFlow — Verified Sparse-First RAG & Research
+### 3. FlowPilot — AI Workflow Automation
 
-LangGraph research and document intelligence system built around **sparse-first, vector-optional retrieval**, adaptive query recovery, evidence provenance, citation verification, and fail-closed behavior.
+An AI automation workspace for launching and managing workflow runs with asynchronous execution, role-scoped access, and approval boundaries.
 
-* **OpenSearch inverted-index retrieval** using BM25 for lexical relevance
-* Exact, phrase, fuzzy, and metadata-aware sparse retrieval
-* **Neural-sparse retrieval without dense-vector k-NN**, when enabled
-* Dense-vector retrieval is not a hard dependency for the retrieval pipeline
-* **Reciprocal Rank Fusion (RRF)** across independently ranked retrieval candidates
-* **Cross-encoder reranking with Jina AI**
-* Bounded agentic query expansion for weak first-pass retrieval
-* Persistent multi-turn conversation state with LangGraph checkpointing
-* Evidence registry with stable turn-scoped evidence IDs
-* Whole-document evidence handling for stronger contextual synthesis
-* Citation verification and claim grounding against the actual evidence set
-* Numeric/date support checks and evidence-conflict detection
-* Retrieved documents and web results treated as **untrusted data**, isolated from agent control flow
-* **Fail-closed behavior** when evidence is missing, insufficient, unsafe, or cannot be verified
+- Content drafting and channel adaptation
+- Competitor intelligence and evidence-oriented briefs
+- Opportunity qualification and approval-ready outreach drafts
+- KPI normalization, blocker detection, and leadership briefings
+- FastAPI workflow API, Streamlit workspace, execution tracking, and Gateway-based BYOK handoff
 
-**Repository:** https://github.com/AsaifAli/LangGraph-RAG
+**Repository:** [AI-Automation-Command-Center](https://github.com/AsaifAli/AI-Automation-Command-Center)
 
+### 4. LegacyLens — Software Modernization Workbench
 
-### 4. QuoteSense — Procurement Intelligence
+An agentic software modernization application combining repository analysis, migration planning, context-grounded conversion, syntax-aware validation, bounded repair, and release gates.
 
-AI-powered quotation analysis system that combines LLM extraction with deterministic validation and scoring.
+- Multi-language program and dependency analysis
+- Retrieval over repository structure and migration context
+- Planned code transformation with deterministic validation
+- Post-migration checks, review states, and downloadable reports
 
-- PDF / DOCX / TXT / XLSX ingestion
-- Structured extraction and schema validation
-- Deterministic procurement scoring
-- Completeness and risk checks
-- Evidence traceability
-- FastAPI + Streamlit + Docker
+**Repository:** [AI-Code-Modernization-Platform](https://github.com/AsaifAli/AI-Code-Modernization-Platform)
 
-**Repository:** https://github.com/AsaifAli/quotation-analyzer
+### 5. WebQA Intelligence — Browser QA Workbench
 
-### 5. WebQA Intelligence — AI-Assisted Testing
+A Playwright-based application for analyzing web applications, generating evidence-backed QA plans, executing explicitly authorized safe tests, and reviewing regressions.
 
-Playwright-based web application QA intelligence platform for dynamic-site crawling, structured DOM analysis, QA risk assessment, test-plan generation, and regression detection.
+- Same-domain browser crawling and optional authentication
+- Structured DOM, form, and interaction discovery
+- Evidence-grounded test planning and risk assessment
+- Explicit safe test execution and regression baselines
+- Reports and exports for QA review
 
-- Same-domain browser crawling
-- Authentication support
-- Structured DOM and interaction analysis
-- Evidence-grounded QA generation
-- Browser health and regression signals
-- Safe-by-default interaction model
+**Repository:** [web-crawler-agent](https://github.com/AsaifAli/web-crawler-agent)
 
-**Repository:** https://github.com/AsaifAli/web-crawler-agent
+## Shared infrastructure
 
-## 🚀 AI Engineering Evaluation & Agent Harness
+### Portfolio LLM Gateway
 
-A modular AI engineering platform for **evaluating, observing, testing, and governing AI systems** across RAG, agentic workflows, code modernization, document intelligence, and AI-assisted testing.
+A shared OpenAI-compatible inference gateway used by interactive portfolio applications. It supports provider-specific adapters, encrypted provider credentials, short-lived project-scoped sessions, and one-time handoff codes. The website owns provider selection and BYOK credential entry; applications receive temporary session access rather than the user's raw provider key.
 
-It currently integrates evaluation workflows for **five AI systems**:
+**Repository:** [shared-Portfolio-LLM-Gateway](https://github.com/AsaifAli/shared-Portfolio-LLM-Gateway)
 
-- **FlowPilot** — Agentic automation control plane
-- **LegacyLens** — Agentic software modernization
-- **EvidenceFlow** — Verified sparse-first RAG
-- **QuoteSense** — Procurement and document intelligence
-- **WebQA Intelligence** — AI-assisted browser testing
+### Engineering Assurance
 
-### What the platform provides
+A deliberately small internal service for replay-quality evidence and content-free application telemetry. Its retained evaluation packs cover **EvidenceFlow** and **QuoteSense** only. The read-only dashboard distinguishes synthetic replay fixture scores from actual application activity; those fixture scores are not live model-accuracy claims.
 
-| Capability | What it covers |
-|---|---|
-| **AI Evaluation** | Project-specific evaluation packs and golden datasets |
-| **RAG Evaluation** | Recall@K, Precision@K, MRR, MAP@K, nDCG@K |
-| **Agent Evaluation** | Task success, step success, tool-call validity, policy and approval compliance |
-| **Code Evaluation** | Syntax validation, unit-test pass rate, semantic verification, release gates |
-| **Document Evaluation** | Exact match, schema validity, numeric accuracy, risk F1 |
-| **Browser QA Evaluation** | Test-generation P/R/F1, defect and regression detection, locator validity |
-| **LLM-as-a-Judge** | Relevance, groundedness, faithfulness, completeness and qualitative scoring |
-| **Observability** | Latency, tokens, cost, fallback and execution telemetry |
-| **Agent Tracing** | Step-level execution traces and tool-call visibility |
-| **Guardrails** | Prompt-injection detection, secret redaction and policy enforcement |
-| **Experiment Tracking** | Baseline vs candidate comparison and regression detection |
-| **Prompt / Model Lineage** | Versioned prompt, model, dataset and configuration tracking |
-| **Quality Gates** | Automated thresholds for AI quality and regression control |
-| **Human-in-the-Loop** | Approval workflows and auditable decisions |
-| **n8n Automation** | Scheduled evaluation and regression workflows |
-| **Plugin Architecture** | Reusable adapters and evaluation packs for new AI services |
+**Repository:** [ai-engineering-evaluation-harness](https://github.com/AsaifAli/ai-engineering-evaluation-harness)
 
-### 🔌 Modular Integration
+### AI-Native Agency OS
 
-The harness is designed as an extensible platform rather than a project-specific dashboard.
+A separate private, founder-controlled operating environment for the AI engineering studio. It contains the agency's native workforce, revenue and delivery foundations, governed execution, and founder-approval boundaries. It is not a public SaaS product, and its workforce catalogue should not be mistaken for a claim that every agent is already an autonomous live runtime.
 
-New AI services can be integrated through:
+**Repository:** private — not publicly linked.
 
-```text
-AI Service
-    ↓
-Project Adapter
-    ↓
-Normalized AgentRun
-    ↓
-Evaluation Pack
-    ↓
-Metrics + Quality Gates
-    ↓
-Observability / Audit
-    ↓
-Dashboard
-```
+## Engineering approach
 
-**Repository:** [github.com/AsaifAli/ai-engineering-evaluation-harness](https://github.com/AsaifAli/ai-engineering-evaluation-harness)
+I work across:
 
-## Shared Portfolio LLM Gateway
+- Generative AI, LLM integration, and agentic workflow design
+- RAG, retrieval quality, source provenance, and citation verification
+- Document intelligence, extraction, validation, and deterministic scoring
+- Workflow orchestration, asynchronous execution, and human approval
+- FastAPI, Python, Streamlit, Next.js, Docker, and cloud deployment
+- BYOK session architecture, provider abstraction, and application security
+- Testing, evaluation, observability, and failure-aware system design
 
-The five interactive projects use a shared OpenAI-compatible gateway for BYOK sessions.
-
-```text
-Portfolio
-   ↓
-Redis-backed session
-   ↓
-Short-lived JWT
-   ↓
-Project
-   ↓
-Portfolio LLM Gateway
-   ↓
-User's selected provider/model
-```
-
-Provider credentials remain server-side; projects receive a temporary session token rather than the provider API key.
-
-**Repository:** https://github.com/AsaifAli/shared-Portfolio-LLM-Gateway
-
-## Engineering principles
-
-```text
-Unstructured Data
-      ↓
-Processing / Retrieval
-      ↓
-LLM / Agents
-      ↓
-Structured Validation
-      ↓
-Deterministic Logic
-      ↓
-Evidence / Quality Gates
-      ↓
-Evaluation / Observability
-      ↓
-API / Application
-      ↓
-Containerized Deployment
-```
-
-Across projects I emphasize:
-
-- Structured LLM outputs and schema validation
-- Evidence-grounded generation and citation verification
-- Retrieval designed for recall, precision, and transparent failure modes
-- Deterministic business rules and quality gates
-- Human-in-the-loop controls for external-impact actions
-- Automated evaluation and regression testing
-- Health/readiness checks and observability
-- Dockerized, cloud-deployable services
+I aim to separate probabilistic model behavior from deterministic controls, make failure states visible, and keep consequential actions reviewable.
 
 ## Connect
 
-**LinkedIn:** https://www.linkedin.com/in/sk-asaif-ali-134873243/
+- **LinkedIn:** https://www.linkedin.com/in/sk-asaif-ali-134873243/
+- **Portfolio:** https://asaifali-portfolio.vercel.app
+- **GitHub:** https://github.com/AsaifAli
 
-**Portfolio:** https://asaifali-portfolio.vercel.app
+---
 
-**GitHub:** https://github.com/AsaifAli
-
-## Current focus
-
-**Generative AI · Agentic AI · RAG · LLM Systems · AI Reliability · AI Automation · Document Intelligence · Software Modernization · AI-Assisted QA**
+*The repositories represent independent engineering demonstrations and supporting infrastructure. Descriptions do not imply customer deployments, customer outcomes, production certification, or that every optional hosted integration is currently configured.*
