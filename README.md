@@ -104,7 +104,7 @@ I aim to separate probabilistic model behavior from deterministic controls, make
 ## Connect
 
 - **LinkedIn:** https://www.linkedin.com/in/sk-asaif-ali-134873243/
-- **Portfolio:** https://asaifali-portfolio.vercel.app
+- **Portfolio:** https://studio.asaifali-studio.workers.dev
 - **GitHub:** https://github.com/AsaifAli
 
 ---
