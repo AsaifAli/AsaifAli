@@ -18,6 +18,7 @@ A LangGraph-based research and RAG application built around sparse-first retriev
 - Document ingestion, persistent conversations, and source traceability
 - Citation and grounding checks, conflict detection, and evidence-sufficiency states
 
+**Live demo:** [Open EvidenceFlow](https://langgraph-rag-hdkn.onrender.com)  
 **Repository:** [LangGraph-RAG](https://github.com/AsaifAli/LangGraph-RAG)
 
 ### 2. QuoteSense — Procurement Intelligence
@@ -30,6 +31,7 @@ An AI-assisted quotation analysis application that turns supplier documents into
 - Completeness checks, commercial risk detection, and price anomaly signals
 - Evidence traceability and human-reviewed recommendations
 
+**Live demo:** [Open QuoteSense](https://quotation-analyzer-9m4i.onrender.com)  
 **Repository:** [quotation-analyzer](https://github.com/AsaifAli/quotation-analyzer)
 
 ### 3. FlowPilot — AI Workflow Automation
@@ -42,6 +44,7 @@ An AI automation workspace for launching and managing workflow runs with asynchr
 - KPI normalization, blocker detection, and leadership briefings
 - FastAPI workflow API, Streamlit workspace, execution tracking, and Gateway-based BYOK handoff
 
+**Live demo:** [Open FlowPilot](https://ai-automation-ui-ac2c.onrender.com)  
 **Repository:** [AI-Automation-Command-Center](https://github.com/AsaifAli/AI-Automation-Command-Center)
 
 ### 4. LegacyLens — Software Modernization Workbench
